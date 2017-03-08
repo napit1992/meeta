@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<form action="/dogs" method="POST">
+				<div class="form-group">
+				<input type="text" name="dog[name]" placeholder="Name of the Dog">
+			<div class="form-group">
+				<input type="text" name="dog[breed]" placeholder="Breed of the dog">
+			</div>
+
+			<button class="btn btn-primary">Submit</button>
+			</form>	
+		 </div>
+		</div>
+	</div>
+</div>
+
+
+<% include ./partials/header %>

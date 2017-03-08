@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+  <title>Metahorizon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Dynamic Tabs</h2>
+  <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+  <ul class="nav nav-tabs">
+  <a class="btn btn-success" href="/dogs/new">Add dog</a>
+
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+      
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+  <div class="td-layout-column td-layout-grid5 td-layout-column-first">
+                    <div class="td-callout-heading">
+                        <div class="info-location">
+                            <link class="invisible" aria-hidden="true" itemprop="url" href="https://www.google.com/maps/place/Metahorizon/@32.8855837,-96.9687503,15z/data=!4m5!3m4!1s0x0:0x4d1e0100d59e4c95!8m2!3d32.8855837!4d-96.9687503">
+                            
+                            <link class="invisible" aria-hidden="true" itemprop="https://www.google.com/maps/place/Metahorizon/@32.8855837,-96.9687503,15z/data=!4m5!3m4!1s0x0:0x4d1e0100d59e4c95!8m2!3d32.8855837!4d-96.9687503">
+                            
+                            <div class="locationName invisible" aria-hidden="true" itemprop="name">
+                                600 W Main Street -  Freehold,  NJ</div>
+                            <div class="brand invisible" aria-hidden="true" itemprop="brand">
+                                TD Bank</div>
+                            <div class="info-id invisible">
+                                40269</div>
+                            <div class="info-lat invisible">
+                                40.238783</div>
+                            <div class="info-lng invisible">
+                                -74.307076</div>
+                            <div class="info-address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                <h4 itemprop="streetAddress">
+                                     1303 West Walnut Hill Ln #122</h4>
+                                <div class="info-address-csz">
+                                    <span class="info-city" itemprop="addressLocality">
+                                         Freehold</span>,
+                                    <span class="info-state" itemprop="addressRegion">
+                                         Irving,TX</span> <span class="info-zip" itemprop="postalcode">
+                                             75038</span>
+                                </div>
+                            </div>
+                            <div class="info-phone" itemprop="telephone">
+                                469-269-0395</div>
+                        </div>
+                    </div>
+                    <!-- Start Get directions -->
+                    <div class="td-layout-row">
+                        <div name="td-get-directions-form" role="form" aria-labelledby="aria-get-directions">
+                            <h5>
+                                <a class="td-link-toggle {targetelement: '.td-get-directions'}" href="#" tabindex="0">
+                                    <span class="td-triggericon">Expand</span> <span id="aria-get-directions">Get Directions</span></a></h5>
+                            <div class="td-JShide td-get-directions" style="display: none;">
+                                <div id="td-get-dir-controls" class="td-layout-column td-layout-grid4 td-layout-column-first">
+                                    <div class="td-layout-row td-trvl-section" role="toolbar" aria-activedescendant="button1">
+                                        <div href="#driving" role="button" alt="driving" tabindex="0" class="td-trvl-mode td-trvl-driving td-mode-first selected" data-trvl-mode="driving">
+                                            <span class="td-g-strp td-drv-cion">driving</span></div>
+                                        <div class="td-trvl-mode td-trvl-transit" role="button" data-trvl-mode="transit" tabindex="0" alt="transit">
+                                            <span class="td-g-strp td-drv-cion">transit</span></div>
+                                        <div class="td-trvl-mode td-trvl-walking" role="button" alt="walking" data-trvl-mode="walking" tabindex="0">
+                                            <span class="td-g-strp td-drv-cion">walking</span></div>
+                                        <div class="td-trvl-mode td-trvl-bicycling td-mode-last" role="button" alt="bicycling" data-trvl-mode="bicycling" tabindex="0">
+                                            <span class="td-g-strp td-drv-cion">bicycling</span></div>
+                                    </div>
+                                    <div class="td-layout-row">
+                                        <ul>
+                                            <li>
+                                                <label for="td-dir-from">
+                                                    From:</label><input type="text" id="td-dir-from" class="getDirections gInput" title="Enter source city or street or zip code">
+                                                <ul id="td-dir-from-results" class="td-g-results" style="position: absolute; top: 18px;
+                                                    left: 45px; width: 386px;">
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <label for="td-dir-to">
+                                                    To:</label><input type="text" id="td-dir-to" class="getDirections gInput" title="Enter source city or street or zip code">
+                                                <ul id="td-dir-to-results" class="td-g-results" style="position: absolute; top: 18px;
+                                                    left: 45px; width: 386px;">
+                                                </ul>
+                                            </li>
+                                            <li class="td-copy-align-right"><a href="#" class="td-button td-button-secondary td-button-compact td-go-directions" title="Get directions" role="button"><span class="td-button-label">GO</span></a></li>
+                                        </ul>
+                                        <div class="td-reverse-directions" tabindex="0" role="button">
+                                            <span class="td-g-strp td-reverse-button">Reverse directions</span></div>
+                                    </div>
+                                </div>
+                                <div class="td-layout-row td-dir-results">
+                                    <div class="td-map-print" tabindex="0" role="button">
+                                        <a>Print directions</a></div>
+                                    <div id="td-dir-results" tabindex="0" title="Google get directions results" role="main">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Get directions -->
+                    <hr class="td-divider-fade">
+                </div>
+      <!-- <div class="location-detail" -->
+      <div id= meta-layout-contentarea" class=location-detail" itemscope intemtype=""
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
